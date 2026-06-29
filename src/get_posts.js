@@ -36,7 +36,7 @@ function showPosts(posts) {
 
             let tag_container = document.createElement("li");
             let tag = document.createElement("a");
-            tag.href = `/posts?filter=${tag_content}`;
+            tag.href = `/posts.html?filter=${tag_content}`;
             tag.innerText = `#${tag_content}`;
 
 
