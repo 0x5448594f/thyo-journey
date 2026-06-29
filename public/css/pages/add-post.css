@@ -1,0 +1,128 @@
+main {
+    #post-informations {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        textarea, input {
+            width: 100%;
+            resize: none;
+            font-size: 1rem;
+            font-family: var(--code-font);
+            border: 0;
+            outline: 0;
+            background: transparent;
+            field-sizing: content;
+        }
+
+        #title-textarea {
+            font-size: 1.8rem;
+        }
+
+        #tags-input { font-size: .7rem }
+    }
+
+    #input {
+        width: 100%;
+        resize: none;
+        font-size: 1rem;
+        font-family: var(--code-font);
+        border: 0;
+        outline: 0;
+        background: transparent;
+        field-sizing: content;
+    }
+
+    #preview {
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        font-size: .7rem;
+        background: transparent;
+        font-weight: bold;
+        border: 2px solid var(--text-color);
+        padding: 5px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        transition-property: background, color;
+
+        &:hover {
+           background: var(--text-color);
+           color: var(--background);
+        }
+    }
+
+    .hide { display: none; }
+
+    .buttons-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .image-input-container {
+            position: relative;
+            height: 35px;
+            width: 8rem;
+            overflow: hidden;
+
+            #add-image {
+                opacity: 0;
+                position: aboslute;
+                pointer-events: all;
+                cursor: pointer;
+            }
+
+            button {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+
+            &:hover button {
+                background: var(--active-color);
+                color: var(--background);
+            }
+        }
+
+        button {
+            background: transparent;
+            border: 2px solid var(--active-color);
+            border-radius: 10px;
+            padding: 5px 10px;
+            color: var(--active-color);
+            transition: .3s ease-in-out;
+            transition-property: color, background;
+            font-size: .7rem;
+            cursor: pointer;
+
+            &:hover {
+                background: var(--active-color);
+                color: var(--background);
+            }
+        }
+    }
+
+    #send {
+        position: fixed;
+        bottom: 50px;
+        right: 200px;
+        font-size: .7rem;
+        background: transparent;
+        font-weight: bold;
+        border: 2px solid var(--text-color);
+        padding: 5px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        transition-property: background, color;
+
+        &:hover {
+           background: var(--text-color);
+           color: var(--background);
+        }
+    }
+}

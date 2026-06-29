@@ -1,0 +1,81 @@
+@import "vars.css";
+@import "fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    color: unset;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: var(--base-font);
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px 20px 20px 20px;
+    background: var(--background);
+    color: var(--text-color);
+}
+
+a { cursor: pointer }
+h1, h2, h3 { font-family: var(--base-font) }
+h1 { font-size: 1.6rem }
+h2 { font-size: 1.4rem }
+h3 { font-size: 1.2rem }
+
+code {
+    font-family: "Supreme", sans-serif;
+    font-weight: bold;
+}
+
+header {
+    position: relative;
+    margin-bottom: 30px;
+
+    .home-link {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        position: relative;
+    }
+
+    nav {
+        padding: 20px 0 10px 0;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+}
+
+#error-container {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    span {
+        font-size: .8rem;
+        padding: 5px 10px;
+        border-radius: 15px;
+        border: 2px solid black;
+    }
+
+    .error {
+        background: #c1121f; 
+        border-color: #780000;
+    }
+
+    .valid {
+        background: #606c38; 
+        border-color: #283618;
+    }
+
+}

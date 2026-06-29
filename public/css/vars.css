@@ -1,0 +1,9 @@
+:root {
+    --background: #132a13;
+    --text-color: #fefee3;
+    --active-color: #a3b18a;
+    --secondary: #1b4332;
+
+    --base-font: "Sentient", sans-serif;
+    --code-font: "Supreme", sans-serif;
+}

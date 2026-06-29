@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .image-container { 
+        width: 100%;
+        padding: 10px 10px 5px 10px;
+        background: var(--active-color);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .web-fingerprint {
+        margin-left: 15px;
+
+        a { 
+            color: var(--active-color); 
+            text-decoration: underline; 
+        }
+    }
+}
